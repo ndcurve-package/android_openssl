@@ -1,1 +1,1 @@
-include($$PWD/openssl.pri)
+android: include($$PWD/openssl.pri)

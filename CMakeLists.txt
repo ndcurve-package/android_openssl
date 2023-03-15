@@ -1,3 +1,5 @@
+set(PROJECT_NAME "${MAIN_PACKAGE}")
+
 if (CMAKE_BUILD_TYPE STREQUAL "Debug")
     set (SSL_ROOT_PATH ${CMAKE_CURRENT_LIST_DIR}/no-asm)
 else()
@@ -54,7 +56,6 @@ else()
         endif()
     else()
         if (NOT (QT_VERSION LESS 5.14.0))
-            message(${SSL_ROOT_PATH})
             set(ANDROID_EXTRA_LIBS
                 ${SSL_ROOT_PATH}/latest/arm/libcrypto_1_1.so
                 ${SSL_ROOT_PATH}/latest/arm/libssl_1_1.so

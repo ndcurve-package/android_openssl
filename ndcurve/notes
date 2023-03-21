@@ -1,7 +1,25 @@
 
 
 1) Download and extract https://github.com/openssl/openssl/archive/refs/tags/openssl-3.1.0.zip
+
+# Android
+# -------
+
 2) Adjust parameters in openssl-build.sh
 3) Run
 
  ./openssl-build.sh
+
+# Linux
+# -----
+./Configure shared
+ SSL_SUFFIX=_3
+ make -j$(nproc) SHLIB_VERSION_NUMBER= SHLIB_EXT=$SSL_SUFFIX.so build_libs
+
+ cp
+    libssl.a
+    libssl.so
+    libssl.so.3
+    libcrypto.a
+    libcrypto.so
+    libcrypto.so.3

@@ -126,7 +126,6 @@ else()
                     ${SSL_ROOT_PATH}/arm64/libcrypto_3.so
                     ${SSL_ROOT_PATH}/arm64/libssl_3.so
                 )
-                message("${SSL_ROOT_PATH}/arm64/libssl_3_1.so")
             endif()
             if (CMAKE_ANDROID_ARCH_ABI STREQUAL "x86")
                 set_property(TARGET ${PROJECT_NAME} APPEND PROPERTY QT_ANDROID_EXTRA_LIBS

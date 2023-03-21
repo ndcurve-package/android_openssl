@@ -1,0 +1,7 @@
+
+
+1) Download and extract https://github.com/openssl/openssl/archive/refs/tags/openssl-3.1.0.zip
+2) Adjust parameters in openssl-build.sh
+3) Run
+
+ ./openssl-build.sh

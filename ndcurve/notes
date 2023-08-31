@@ -2,6 +2,7 @@
 
 1) Download and extract https://github.com/openssl/openssl/archive/refs/tags/openssl-3.1.0.zip
 
+
 # Android
 # -------
 
@@ -23,3 +24,11 @@
     libcrypto.a
     libcrypto.so
     libcrypto.so.3
+
+
+
+
+
+Note: For libcurl
+               (build/include) is copied to include/build
+               (openssl-openssl-3.1.0/include) is copied to include/src

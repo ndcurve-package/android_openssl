@@ -11,6 +11,8 @@ if (CMAKE_ANDROID_ARCH_ABI STREQUAL "armeabi-v7a")
         ${ANDROID_EXTRA_LIBS}
         ${SSL_ROOT_PATH}/arm/libcrypto_3.so
         ${SSL_ROOT_PATH}/arm/libssl_3.so
+        ${SSL_ROOT_PATH}/arm/libcrypto.so
+        ${SSL_ROOT_PATH}/arm/libssl.so
     CACHE INTERNAL "")
 endif()
 if (CMAKE_ANDROID_ARCH_ABI STREQUAL "arm64-v8a")
@@ -18,6 +20,8 @@ if (CMAKE_ANDROID_ARCH_ABI STREQUAL "arm64-v8a")
         ${ANDROID_EXTRA_LIBS}
         ${SSL_ROOT_PATH}/arm64/libcrypto_3.so
         ${SSL_ROOT_PATH}/arm64/libssl_3.so
+        ${SSL_ROOT_PATH}/arm64/libcrypto.so
+        ${SSL_ROOT_PATH}/arm64/libssl.so
     CACHE INTERNAL "")
 endif()
 if (CMAKE_ANDROID_ARCH_ABI STREQUAL "x86")
@@ -25,6 +29,8 @@ if (CMAKE_ANDROID_ARCH_ABI STREQUAL "x86")
         ${ANDROID_EXTRA_LIBS}
         ${SSL_ROOT_PATH}/x86/libcrypto_3.so
         ${SSL_ROOT_PATH}/x86/libssl_3.so
+        ${SSL_ROOT_PATH}/x86/libcrypto.so
+        ${SSL_ROOT_PATH}/x86/libssl.so
     CACHE INTERNAL "")
 endif()
 if (CMAKE_ANDROID_ARCH_ABI STREQUAL "x86_64")
@@ -32,5 +38,7 @@ if (CMAKE_ANDROID_ARCH_ABI STREQUAL "x86_64")
         ${ANDROID_EXTRA_LIBS}
         ${SSL_ROOT_PATH}/x86_64/libcrypto_3.so
         ${SSL_ROOT_PATH}/x86_64/libssl_3.so
+        ${SSL_ROOT_PATH}/x86_64/libcrypto.so
+        ${SSL_ROOT_PATH}/x86_64/libssl.so
     CACHE INTERNAL "")
 endif()

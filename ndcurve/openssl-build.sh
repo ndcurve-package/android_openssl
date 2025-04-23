@@ -2,10 +2,9 @@
  # INPUTS
 
  # If in doubt check Qt Creator -> Projects -> Build -> CMAKE Variables
- # ANDROID_NATIVE_API_LEVEL 23                  For Android 6.0 or later (API level 23 or higher) Note: https://doc.qt.io/qt-6/android.html
- # ANDROID_NDK /home/muneer/.Installation/android-sdk-linux/ndk/25.1.8937393
- ANDROID_NDK="/home/muneer/.Installation/android-sdk-linux/ndk/25.1.8937393"
- ANDROID_API_LEVEL=23
+ # ANDROID_NATIVE_API_LEVEL 28                  Android 9 (API 28) to 15 (API 35) Note: https://doc.qt.io/qt-6/android.html
+ ANDROID_NDK="/home/muneer/.Installation/android-sdk-linux/ndk/27.2.12479018"
+ ANDROID_API_LEVEL=28
  SSL_SUFFIX=_3
 
  # ----------------------------------------------------------------------------

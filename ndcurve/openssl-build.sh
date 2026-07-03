@@ -11,9 +11,6 @@
  ANDROID_API_LEVEL=$ANDROID_SDK_API_LEVEL
  SSL_SUFFIX=_3
 
- # Android 16 KB Page Alignment. NDK 27.2 by default doesn't do this. This may be removed if we switch to NDK 28 as it does compile by default.
-#  export LDFLAGS="-Wl,-z,max-page-size=16384"
-
 #  OPEN_SSL_VERSION=3.1.0
  OPEN_SSL_VERSION=3.6.1
  # ----------------------------------------------------------------------------
